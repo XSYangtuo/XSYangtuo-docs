@@ -1,0 +1,1437 @@
+
+<!doctype html>
+<html lang="zh" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="XSYangtuo 的文章与整理稿">
+      
+      
+        <meta name="author" content="XSYangtuo">
+      
+      
+        <link rel="canonical" href="https://xsyangtuo.github.io/XSYangtuo-docs/XSYangtuodocs/chapter1/01-%E6%AD%A3%E6%96%87-%E7%BB%99AI%E6%97%B6%E4%BB%A3%E6%B3%BC%E4%B8%80%E5%B1%82%E6%B8%A9%E6%B0%B4/">
+      
+      
+        <link rel="prev" href="../00-README-%E7%B4%A2%E5%BC%95%E4%B8%8E%E6%B3%A8%E9%87%8A/">
+      
+      
+        <link rel="next" href="../02-%E6%90%AC%E8%BF%90-Fable%E3%80%8A%E8%B5%B0%E3%80%8B%E5%85%A8%E6%96%87/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.7">
+    
+    
+      
+        <title>正文 - XSYangtuo 文档</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.ec1eaa64.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#ai" class="md-skip">
+          跳转至
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="页眉">
+    <a href="../../.." title="XSYangtuo 文档" class="md-header__button md-logo" aria-label="XSYangtuo 文档" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            XSYangtuo 文档
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              正文
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="切换到深色模式"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="切换到深色模式" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m17.75 4.09-2.53 1.94.91 3.06-2.63-1.81-2.63 1.81.91-3.06-2.53-1.94L12.44 4l1.06-3 1.06 3zm3.5 6.91-1.64 1.25.59 1.98-1.7-1.17-1.7 1.17.59-1.98L15.75 11l2.06-.05L18.5 9l.69 1.95zm-2.28 4.95c.83-.08 1.72 1.1 1.19 1.85-.32.45-.66.87-1.08 1.27C15.17 23 8.84 23 4.94 19.07c-3.91-3.9-3.91-10.24 0-14.14.4-.4.82-.76 1.27-1.08.75-.53 1.93.36 1.85 1.19-.27 2.86.69 5.83 2.89 8.02a9.96 9.96 0 0 0 8.02 2.89m-1.64 2.02a12.08 12.08 0 0 1-7.8-3.47c-2.17-2.19-3.33-5-3.49-7.82-2.81 3.14-2.7 7.96.31 10.98 3.02 3.01 7.84 3.12 10.98.31"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="切换到浅色模式"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="切换到浅色模式" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3m0-7 2.39 3.42C13.65 5.15 12.84 5 12 5s-1.65.15-2.39.42zM3.34 7l4.16-.35A7.2 7.2 0 0 0 5.94 8.5c-.44.74-.69 1.5-.83 2.29zm.02 10 1.76-3.77a7.131 7.131 0 0 0 2.38 4.14zM20.65 7l-1.77 3.79a7.02 7.02 0 0 0-2.38-4.15zm-.01 10-4.14.36c.59-.51 1.12-1.14 1.54-1.86.42-.73.69-1.5.83-2.29zM12 22l-2.41-3.44c.74.27 1.55.44 2.41.44.82 0 1.63-.17 2.37-.44z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="搜索" placeholder="搜索" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="查找">
+        
+          <a href="javascript:void(0)" class="md-search__icon md-icon" title="分享" aria-label="分享" data-clipboard data-clipboard-text="" data-md-component="search-share" tabindex="-1">
+            
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7s-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.15c-.05.21-.08.43-.08.66 0 1.61 1.31 2.91 2.92 2.91s2.92-1.3 2.92-2.91A2.92 2.92 0 0 0 18 16.08"/></svg>
+          </a>
+        
+        <button type="reset" class="md-search__icon md-icon" title="清空当前内容" aria-label="清空当前内容" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            正在初始化搜索引擎
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+    
+      
+<nav class="md-tabs" aria-label="标签" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../.." class="md-tabs__link">
+        
+  
+  
+    
+  
+  首页
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../../" class="md-tabs__link">
+          
+  
+  
+    
+  
+  XSYangtuodocs
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+    
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="导航栏" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../.." title="XSYangtuo 文档" class="md-nav__button md-logo" aria-label="XSYangtuo 文档" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    XSYangtuo 文档
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    首页
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    XSYangtuodocs
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_2" id="__nav_2_label" tabindex="">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    XSYangtuodocs
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_2" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2_2" id="__nav_2_2_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    chapter1：《给AI时代泼一层温水》
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    chapter1：《给AI时代泼一层温水》
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../00-README-%E7%B4%A2%E5%BC%95%E4%B8%8E%E6%B3%A8%E9%87%8A/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    索引与注释
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    正文
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    正文
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        【搬运与整理声明】
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ❀引言❀
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ai_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ❀AI时代的存在主义危机❀
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ❀我的沦陷❀
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ai_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ❀一些异样的AI使用经历❀
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ai_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ❀关于AI的智力❀
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ❀平庸的优秀❀
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ❀"千千万万人写下过的离别"❀
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ❀一个反面的例子：今年期末某学习资料❀
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ❀第一次作答❀
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_8" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ❀这个作答的漏洞❀
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_9" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ❀在这个时代，什么是真正的价值？❀
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_10" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ❀常被轻视的正是人的价值❀
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_11" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ❀一个数学领域的例子❀
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_12" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ❀第二次回答❀
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_13" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ❀后记❀
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#-" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        --- 编辑 ---
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_14" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        注释
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../02-%E6%90%AC%E8%BF%90-Fable%E3%80%8A%E8%B5%B0%E3%80%8B%E5%85%A8%E6%96%87/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    搬运：Fable《走》全文
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../03-%E4%BA%8B%E4%BB%B6-%E5%A4%A7%E7%89%A9%E6%99%AE%E7%89%A9%E8%AE%B2%E4%B9%89%E9%A3%8E%E6%B3%A2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    事件：大物／普物讲义风波
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../04-%E7%83%AD%E8%AF%84%E7%B2%BE%E9%80%89/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    热评精选
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../05-%E7%9B%B8%E5%85%B3%E5%B8%96%E5%AD%90%E6%91%98%E8%A6%81/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    相关帖子摘要
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        【搬运与整理声明】
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ❀引言❀
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ai_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ❀AI时代的存在主义危机❀
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ❀我的沦陷❀
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ai_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ❀一些异样的AI使用经历❀
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ai_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ❀关于AI的智力❀
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ❀平庸的优秀❀
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ❀"千千万万人写下过的离别"❀
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ❀一个反面的例子：今年期末某学习资料❀
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ❀第一次作答❀
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_8" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ❀这个作答的漏洞❀
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_9" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ❀在这个时代，什么是真正的价值？❀
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_10" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ❀常被轻视的正是人的价值❀
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_11" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ❀一个数学领域的例子❀
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_12" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ❀第二次回答❀
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_13" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ❀后记❀
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#-" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        --- 编辑 ---
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_14" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        注释
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="ai">给AI时代泼一层温水——我如何缓解自己的生存焦虑（长文预警）</h1>
+<blockquote>
+<h3 id="_1">【搬运与整理声明】</h3>
+<p><strong>以下正文由人（楼主）写作</strong>：CC98 论坛同名帖 1-2 楼的全文搬运，未改一字，著作权归原作者 <strong>XSYangtuo</strong> 所有。表情代码（如 <code>[tb22]</code>）按原样保留。</p>
+<p><strong>以下内容由 AI 添加，不是原文</strong>：章节之外、标有脚注编号 <code>[^n]</code> 的注释，以及文末的注释列表——由整理者（AI）撰写，用于解释站内梗、人名与事件，<strong>不代表原作者观点</strong>。文中原有网址已改写为文字名称，原始网址见 <a href="../00-README-%E7%B4%A2%E5%BC%95%E4%B8%8E%E6%B3%A8%E9%87%8A/">00-README</a> 的附录。</p>
+<p><strong>作者</strong>：XSYangtuo ｜ <strong>版面</strong>：学习天地 ｜ <strong>首发</strong>：2026-09-01 22:33（1 楼）／22:34（2 楼）</p>
+</blockquote>
+<hr />
+<h2 id="_2">❀引言❀</h2>
+<p>距离我上次写的《作为普通人...》过去了一年半多<sup id="fnref:1"><a class="footnote-ref" href="#fn:1">1</a></sup>（现在已经充斥着过时的观点了，闲出屁的8u<sup id="fnref:2"><a class="footnote-ref" href="#fn:2">2</a></sup>可以去读读然后打我脸，最好别读，向所有读过这篇文章的8u<strong>郑重道歉</strong><sup id="fnref:3"><a class="footnote-ref" href="#fn:3">3</a></sup>[tb22]（笑）），前一段时间回顾了一下当时的文字，很庆幸当时为自己留下了一些记录，为那个AI青涩的时代留下了一些印记（虽然现在也很青涩），并且也促成了我新的思考，希望能通过本文讲一讲作为一个非相关专业的学生，在这段时间以来的挣扎和所思所想。</p>
+<p>为什么说这是一盆温水呢？虽说本文的基调是比较偏向反思的，但是我是始终抱着对AI积极迎接的态度对其进行反思的（赞同一个观点：一个没有充分使用过AI，并将其融入自己工作流的人，是无法得到任何清晰深入的认识的），所以说不上冷水，所以说是温水吧。</p>
+<p><u>观前提醒：</u></p>
+<ol>
+<li>本文很长，但是非特别标注，都不是AI生成的，可放心阅读。</li>
+<li>本文提到AI，非特指都是指大语言模型及agent。</li>
+<li>本文的内容主要集中在对AI的哲思和意义探索，请不要期待在本文看到关于AI的推荐，使用教程，技巧等。</li>
+<li>本文仅代表个人观点，不代表任何其他实体；本文有一些尖锐的，不让部分人舒畅的看法，可以酌情阅读，但是相信会有所得。</li>
+<li>本文虽然观点先行，但是举了大量例子来阐述，尽力阐明本人的想法。如果这些例子冒犯到你，我很抱歉，对事不对人。</li>
+<li>本文有一些随手生成的趣味插图，我都缩进起来了，可以自选查看（？</li>
+</ol>
+<hr />
+<h2 id="ai_1">❀AI时代的存在主义危机❀</h2>
+<p>如果你关注网上的各种AI野路子评测相关的视频，你会发现很多人经常做的事情叫做"一句话生成xxx"。最经典的是"一句话生成mc"。犹记得当时ds灰测<sup id="fnref:4"><a class="footnote-ref" href="#fn:4">4</a></sup>普天盖地都是一句话生成mc的视频，大家都开始为这种长程任务能力震惊，然后惊叹之余，又可能为这种强大的能力感到焦虑：AI这么厉害了，我怎么保证我做的事情是不可替代的？现在不可替代，未来呢？</p>
+<p>我最近有个一起交流使用AI心得体会的朋友就碰到了这个问题。他确实是AI的深度使用者，我可能日常就ds用一用，配一个视觉辅助模型（ds涨价前），偶尔有需求的时候中转接一下GPT来用，他可以在用完GPTpro20x<sup id="fnref:5"><a class="footnote-ref" href="#fn:5">5</a></sup>的额度后还能每天用几百美元买额度（确实需要处理的科研等任务较多）。据他说他们实验室服务器上已经没有人类了，都是codex在跑实验。他提了这么一个问题："<strong>如果一切ai都能干，我存在的意义是什么</strong>，这么跟ai交互也跟打游戏没差。"</p>
+<p><img alt="插图：一群机器人与羊驼在&quot;ALPACA CORE&quot;服务器机房里协同工作，四周飘着&quot;Bandwidth Upgrade&quot;&quot;System Check&quot;&quot;Security Protocol&quot;&quot;Energy Boost&quot;等工单气泡" src="../assets/3pzqy1ue.png" /></p>
+<hr />
+<h2 id="_3">❀我的沦陷❀</h2>
+<p>这个问题我比他更早就碰到过。如果有读过我一年半之前的屎作，就会知道我很可能比他更早接触了一些agent产品（比如当时在vscode的插件cline，长下面这样，有点原始hhh）</p>
+<p><img alt="截图：早期 VSCode 里的 Cline 插件界面，带一段简单的 HTML 生成与 Apply 提示" src="../assets/tcwuao0f.png" /></p>
+<p>而几乎在同期，我特别巧合地接触了两个微信小程序项目：一个是朋友的大创项目<sup id="fnref:6"><a class="footnote-ref" href="#fn:6">6</a></sup>请我帮忙，另一个可能就是你眼前可能正在使用的重构后的98小程序<sup id="fnref:7"><a class="footnote-ref" href="#fn:7">7</a></sup>。前者由于是一次性展示工作，只是用于比赛，所以我用AI糊了大部分。后者则让我比较警惕。我们都希望新的98小程序能比原本的小程序更稳定，更流畅，也有更高的可维护性。所以用AI其实挺让人犯怵的。</p>
+<p>最开始我还是尽量手写，顶多用一用copilot式的补全；后来有一个界面的需求，于是放手让AI做了一个UI，效果不错（大家可以猜到是哪个界面吗）；再然后，遇到了有些重复的工作，即使是跨组件的，也开始交给AI；最后，连架构问题都要和AI进行一番探讨。</p>
+<p><img alt="四格漫画：四只羊驼与机器人依次演示&quot;手工编码+补全 → AI 设计 UI → AI 处理跨组件重复工作 → AI 参与讨论系统架构&quot;，标题为 1. MANUAL CODING WITH COMPLETION / 2. AI DESIGNS THE UI / 3. AI HANDLES REPETITIVE CROSS-COMPONENT WORK / 4. AI DISCUSSES COMPLEX SYSTEM ARCHITECTURE" src="../assets/tazg3wry.png" /></p>
+<p>你可以看到，<strong>即使你是个再保守的人，只要用上AI，就会感觉AI像脱缰的野马一样狂奔，你很自然而然就会慢慢放权，让AI接管你的一切</strong>。这其实给我造成了不小的存在主义危机，毕竟我也是老程序员了。恰逢codex做出了/goal的模式，AI会一直工作，直到达成目标。那AI自己给自己提要求，自己达成目标，iteration &amp; loop，人不就全out了吗？我的焦虑又加重了。</p>
+<hr />
+<h2 id="ai_2">❀一些异样的AI使用经历❀</h2>
+<p>一次转机是在某次做科研进展的墙报。我依旧在使用AI完成很大一部分工作，包括做思维导图，整理文案，做排版。AI总是能帮我完成一个大体的样子，但是总是让我觉得怪怪的。虽然已经给了我的所有工作、报告和相关文献，但是AI输出的内容总是不符合我预期的思路，于是我在它的基础上改，最终就发现，改的内容快要比生成的多了。虽然这导致了我的工作量增加（当然相比没AI来说总体还是减少的），但是我感觉心情变得好多了。因为我明显感觉到了自己的存在。我想，可能是我要完成的这个任务比较个性化以及有一定专业度和深度导致的。</p>
+<p>再往后我希望能减少这种情况，于是去尝试了有长效记忆机制的Agent，有时候也和AI一起造一些规范。（常见的Skill、AGENTS.md，不常见的比如一些loop工作流约束都有尝试过）其实是希望能减少我和ai battle的成本，但是效果其实非常有限。因为<strong>一个人做事的风格是就是很难用一言两语来表达的</strong>。你无法保证你做的约束在其他事情上具有泛用性，除非重复度足够高。比如某些要求你希望AI在某些情况适用某些情况又要判断，这是很难说清的。</p>
+<p>说一个有趣的事情吧，众所周知的一种AI句式是："不是...而是..."，相信大家也对此深恶痛绝。我为了解决这个问题有上一些humanizer的skill<sup id="fnref:8"><a class="footnote-ref" href="#fn:8">8</a></sup>，但是ai仍然会有输出不是而是的可能。于是我搭了一个pipeline，让ai提交之前显式地自查一次然后改过来。结果居然出现了ai在humanizer组件下，写出ai味的文风，然后自查一次改，结果从一种不是而是改成了另一种不是而是。[tb27]这样的循环有时还可以进行好几轮，感觉就是很难根除。</p>
+<p><img alt="插图：一只羊驼在台灯下面对满桌草稿，纸上全是&quot;不是旧观点，而是全新视角&quot;&quot;不是过往认知，而是另一种理解&quot;&quot;不是线性逻辑，而是系统思维&quot;&quot;不是表面问题，而是深层结构&quot;&quot;不是单一答案，而是多元思考&quot;（右下角水印&quot;豆包AI生成&quot;）" src="../assets/fe3pdutn.png" /></p>
+<hr />
+<h2 id="ai_3">❀关于AI的智力❀</h2>
+<p>在开始后面的讨论之前，我想先聊这样一种观点。有人说："你现在说的这种ai指令遵循的问题，是因为ds太唐了。你用Sol/Fable试试？"也就是说我讨论到的现象，是和AI智力强相关的。我从两个角度来讲讲我的看法。</p>
+<p>第一个角度是历史。一个事实是：AI变得聪明和能干的速度越来越快了。仅说智力，半年前的曾经一代神级模型，现在可能在很多领域都打不过参数小几十倍的小模型了（虽然确实有特化）。而这个智力相关的观点，从GPT3.5时代就历来有之。比如在Opus4.6的时代，某些人就会说："接入其他模型先天智力不足，所以解决不了你的问题，你上Opus4.6试试？"。然后到现在，一个Qwen27B就可以匹敌Opus4.6的Agent能力了<sup id="fnref:9"><a class="footnote-ref" href="#fn:9">9</a></sup>。这个时候如果你再问，就会有人要说了："你用GPT5.6 Sol试试？它真的很强！"这群人以前可能就是说Opus4.6能解决问题的那群人，这种归因我是不认可的。因为这个给我感觉是一种愿景：这个问题用更聪明的AI就能解决。正如我所言，<strong>AI变聪明以及变能干是非常之快的，但很多实际问题并没有如期待的那般被解决</strong>（甚至有些更严重了，比如AI味）。这导向一个观点：应该存在有一些问题是不能单纯靠提高AI的能力水平来解决的。</p>
+<p>第二个角度是关于对<strong>AI形象的神化</strong>。这是很多AI产商（特别是A\）惯用的营销手段。不知从什么时候开始（也许是Opus4.8吧），A\就开始宣传自己的AI又突破了什么数学问题，想要给人一种AI已经可以作为<strong>独立的科学家</strong>存在的强大形象——这其实是一种无法兑现的承诺。实际上问过做研究的人就知道传说中的神级AI提的idea有多屎。也许是前段时间GPT额度重置给的太多了，更多人可以用上5.6Sol了，网上也开始出现了关于5.6Sol过度防御编程和兜底编程的问题。想来这些问题都被之前的一些形象光环所遮蔽了，而且在这种"AI可以独立完成一份工作"的宣传中人在其中的因素其实是被隐藏了的。（后文会提到一个相关的例子）</p>
+<p><img alt="截图：B站四条相关视频的缩略图，标题依次为《OpenAI的十个重大数学成果：数学核爆已成常态》《AI毁了我的数学梦》《Anthropic把数学界对AI的防御宣言扔到地上踩》《数学期刊体系彻底崩盘！》" src="../assets/s2t2yzdi.png" /></p>
+<hr />
+<h2 id="_4">❀平庸的优秀❀</h2>
+<p>首先我后续的思考是基于这一观察：AI生成的结果往往更易指向一种<strong>统计的、平均的、客观的优秀</strong>。这其实算是半句废话，毕竟你就让AI给你"一句话生成枪战游戏"，那它肯定给你最符合刻板印象的枪战游戏：鼠标中间是准心，拿着枪，有生命值的3D游戏。我之所以要说这么一句废话，是想说，在AI的时代，"优秀"的含义在发生变化。像AI的这种"优秀"，已经成为了一种新式的平庸和空洞。</p>
+<hr />
+<h2 id="_5">❀"千千万万人写下过的离别"❀</h2>
+<p>为了更好的解释我这个有些抽象的观察，我想举一个有趣的例子，当时Fable5刚出的时候，98有这样一篇文章（写的挺好的，其实值得一读）：《fable写的浙江高考作文 好深刻》<sup id="fnref:10"><a class="footnote-ref" href="#fn:10">10</a></sup>。我读第一遍的时候我确实是有所感动的。我觉得能写出这样的文章，确实很有功力，用词也很有筋道，生死与走的关联也很巧妙，但我总觉得有点怪怪的。</p>
+<p>于是我又再看了一遍。我发现了一些问题：fable把对中国的一些乡土的，乡村的刻板印象杂糅在一起。为什么说是刻板印象呢？因为太刻意了，我仅举几例："炒豌豆"，"走广东，走北京的工地，走新疆摘棉花"（这条很严重，我第一次读的时候就觉得这个很刻板，而且很符合国外的一些刻板印象这是能说的吗）</p>
+<p>以及意象和主题的选取也非常刻板印象。比如槐树就是中国关于乡土情感、归乡情感的核心意象，在文中被反复使用，这个文章选取的又是最容易打动我们的主题：生与死、亲情、内敛的爱（说白了咱中国人都吃这一套，特别是那种白描式的讲述）。如果不看这些小点，仅看整体的话，<strong>你会发现文章中的每个人都没有性格</strong>。奶奶的形象、太爷爷与"我"的经历、"我"的性格都没有什么可以脱离我前面所说的主题的刻板印象，导致他们的形象都没有记忆点。</p>
+<p>虽然这不妨碍fable的这篇文章很感动人，但是要谈上顶级的文学作品确实有一定距离，因为我前面所说的这些形象由于是硬凑的刻板印象，导致它们组合的比较僵硬。fable的回答也挺诚实的：</p>
+<hr />
+<p><img alt="截图：一篇题为&quot;【上十大了 更新一下 fable 对大家评价的回复】&quot;的帖子片段。Fable 回复称：&quot;我没有年龄，也没有奶奶。那道门槛，那把炒豌豆，那双倒退着攥住我的手，都不是我的记忆——是千千万万人写下过的离别，在我这里的余温。&quot;其中&quot;是千千万万人写下过的离别，在我这里的余温&quot;被读者高亮标蓝。" src="../assets/eh2yhkdc.png" /></p>
+<hr />
+<p>好吧，那我们先不讨论这篇文章的艺术性，毕竟一千个人有一千种想法。回到我们那个观察，fable所说的"千千万万人写下过的离别，在我这里的余温。"虽然是fable的谦虚，其实但也算是和我的看法暗合，这是一种对"统计性的优秀"的很好的描述（很诗意哈哈）。它知道大部分的中国人大概会被什么感动，适合一个什么样的故事，就怎么样写了。</p>
+<blockquote>
+<p>【<strong>AI 整理者注</strong>】 Fable 这篇《走》的全文已搬运到本包 <a href="../02-%E6%90%AC%E8%BF%90-Fable%E3%80%8A%E8%B5%B0%E3%80%8B%E5%85%A8%E6%96%87/">02</a>（侵删），建议对照阅读楼主对它的逐点批评。</p>
+</blockquote>
+<hr />
+<h2 id="_6">❀一个反面的例子：今年期末某学习资料❀</h2>
+<p>看了上面的这个例子，大家会觉得，这至少是一种优秀吧！平均的优秀也是优秀不是吗？确实。于是我决定用一个反面例子开刀。今年期末的一份大物/普物的学习资料引起了很大量的讨论，不知大家是否有印象。<sup id="fnref:11"><a class="footnote-ref" href="#fn:11">11</a></sup></p>
+<p>当时一开始大家看到如此详实丰富的内容，纷纷点赞，40多层bd和大量加风评。我打开扫了一眼就发现了诸多错误，于是在后面指出并期望发帖人做一些改正，然后这篇文章就发生了风评反转。（我对作者ephemerall没有任何意见哈！我支持过他之前关于AI的一些作品，还是很有价值的，学到了很多，对事不对人，大家也不要因此去攻击他）这些我指出的小错误其实是次要的，可以说大部分都是一些技术性的问题，顶多引发一些关于AI滥用的讨论而已（可以之后开贴展开讲），这都是可以避免的。但我当时提出"思路不太拟人"其实才是我主要想要讨论的问题。很荣幸热评区@George_C 帮我稍微展开了一些：</p>
+<blockquote>
+<p>一方面AI的思考（不加以细致的调教和训练的话）并不是适合人去很舒服地理解的，另一方面还是AI的行文风格"太吵"，频繁的加粗夺走了注意力，物理又是需要坐冷板凳学的学科，于我来说格外地反感。</p>
+</blockquote>
+<p>可能是因为同为力学人，对这种理解、思路之类的东西比较敏感（泥浙力学还是教了我们一些东西的）。其实你可以看到在这个笔记中处处充满了我所说的这种"优秀"的痕迹。单看任何一小部分，都是最优路径——都在用最好的办法讲解知识点。但是只要稍微把几个部分连起来你会发现思维链比较断裂，而且充斥着对过去题目的过拟合。（感觉这种现象还挺普遍的，你喂给AI比较近的内容，就是更容易夺走注意力，然后过拟合）但是物理学是非常系统的学科，不同人的思考模式可能不同，但是一定是一个系统，这个笔记则没有这个系统，就算用于复习应试我认为也不够格。（比如习惯用能量和动量描述系统的人，和习惯用位移速度描述系统的人，各自都是一整套语言，是不同的思维模式）</p>
+<p>可以说，每个笔记都有适合的人，比如有人喜欢教材A而不喜欢教材B，有人则反之，但这个笔记试图让所有人都能合适，最终却都不合适。比如有些人喜欢数学性分析性强一些的物理教程，有些人喜欢更接近实验和探索的物理读物，人编写的教材是有性格的，人也是有性格的，需要相匹配才行，<strong>而AI却倾向于生成没有性格的内容</strong>。这也不奇怪，毕竟是统计学的结果。“性格”这个词我认为挺重要的。前文描述的那种"优秀"，也可以称之为没有性格的优秀。如果你没有阅读前文，直接看到这句话，就觉得我和那些天天说"AI就是不可能有灵魂的"的人是同类了。事实上，你如果有阅读前文，就可能会明白，我这里的"性格"不是主观的，是客观的在实践中会碰到的一种东西。<strong>很多科研人会称之为Taste</strong>——这就是AI目前没有的东西。</p>
+<p>那篇笔记的作者ephemerall肯定是调教AI的大师，是我等不能及的，但却也会产出这样的笔记。我个人的观点是，他可能很专注于一些技术上的事情，但是对内容本身的关注较低，缺少了Taste的引入。</p>
+<blockquote>
+<p>【<strong>AI 整理者注</strong>】 "讲义风波"的完整过程（含主文作者放出的 5 张勘误截图、层主 George_C 的长评、以及其他层主的反应）见本包 <a href="../03-%E4%BA%8B%E4%BB%B6-%E5%A4%A7%E7%89%A9%E6%99%AE%E7%89%A9%E8%AE%B2%E4%B9%89%E9%A3%8E%E6%B3%A2/">03</a>。</p>
+</blockquote>
+<hr />
+<h2 id="_7">❀第一次作答❀</h2>
+<p>好了，现在貌似可以回答我开头提到的存在主义问题了。AI默认生成的是统计的优秀，没有性格的优秀。最终其作品的性格，风格会均值回归，需要人来把控。AI在把这种趋同的优秀以低廉的成本呈送到我们面前，最终导致其变得平庸。</p>
+<p>有些人可能会说：那我通过一些更精确的描述和适当的提示语，可以避免这个问题吗？我认为目前不完全可以，我前面的经历能部分说明问题，而且后面我也会继续讨论。有经验的人可能会发现，AI生成这种"优秀"是一种<strong>倾向性</strong>，我们只能延缓这种倾向产生的效应，可能通过这种那种的方法（prompt，skill等）。比如说你让AI表现得"创新"，那它就会以最刻板印象的方式呈现"创新"。在我的理解中，这也是为什么纯AI自进化这类概念提出这么久（RSI），目前却一直没能成立的原因。因为多轮自进化之后产生显著的均值回归，可以理解为AI钻牛角尖里面出不来了，最终收敛到一个Sweet Point上面不动。</p>
+<hr />
+<h2 id="_8">❀这个作答的漏洞❀</h2>
+<p>实际上这个作答不能满足我。因为它并不导向一个技术必然性。这其实和我前面反对过的人观点相同："你怎么保证这个问题不会随着技术解决？你不是也说了，AI像脱缰的野马一样逐步夺走了你的工作？"这确实值得思考。AI在进步，AI每进一步，人就退一步，把更多的工作让出来。AI会不会有一天克服了自己的平庸，拥有了自己的taste？比如说现在的模式是大家都通用一个训练好的大模型，然后通过SKILL、harness之类的方式调教它，未来给每个人（或者每个领域）都训练一个专属于ta的模型，那不就不平庸，不就有了自己的taste了？那人就退到了最后一步了，怎么办？</p>
+<h2 id="_9">❀在这个时代，什么是真正的价值？❀</h2>
+<p>这个问题最后的落点还是会到价值层面上。人的存在主义问题，对我来说，是人如何定义自己的价值。从前，vibe coding还未流行的时候，一项软件开发，大部分的价值是程序员通过程序编写来完成的。也就是说，这些价值是技术创造的，而且这种精力是稀缺的，现在来看已然发生了变化。我们应当重新思考一项工作中的价值比重。</p>
+<p>为了展开讲讲这层逻辑，就以CC98为例。在vibe coding流行前，98没有出现过其他客户端<sup id="fnref:12"><a class="footnote-ref" href="#fn:12">12</a></sup>，一般就是技术组开发的网页版和小程序。但是现在，不论你是否关注，98已经出现了windows原生，苹果，鸿蒙，小红书风格的客户端，甚至AI Native的98 cli等，这些都是大家自行开发的。这实质上是因为，AI把coding能力变得平庸了。大家都能开发。</p>
+<p>但是需求不是现在才有的，可能你以前更喜欢小红书的刷帖体验，但是你不会因此去开发一个这样的客户端。因为你知道开发这样一个客户端太难了，就算你有相关能力，也很耗费精力。你不至于为了这一点点简单的刷帖体验，而耗费这么多心血。但是现在有了AI，开发的成本就降低了百倍，那你的偏好也就变得占比更大了。为了这种偏好而开发出一个相适应的客户端，就成了合理的需求。</p>
+<p><img alt="插图：左右对比的饼图。左图&quot;过去&quot;：代表代码/技术的大块蓝色饼图占据绝大部分，代表偏好的小块黄色只有一角；右图&quot;现在&quot;：代表偏好的黄色区域扩大到绝大部分，人站在饼图前，机器人坐在小桌边写代码。左上角标注&quot;AI生成&quot;" src="../assets/qrfoc1qj.png" /></p>
+<p>你看，这就是价值的演变。以前，技术的价值占比远大于你的偏好，所以你没有动机去完成这个开发；现在你的偏好已经变成了真正的价值，而开发的价值微不足道，所以你通过vibe coding放大了你的偏好。换句话说，如果你从价值的演变中思考这个问题就会发现，<strong>AI并不应该说是夺走了你的价值，而应该说它在一步步把属于人的部分还给你，因此它反而突出了人的真实价值</strong>。（Taste、偏好、性格、whatever）</p>
+<hr />
+<h2 id="_10">❀常被轻视的正是人的价值❀</h2>
+<p>看起来这个结论很简单，假如我们从反面来思考这个问题，就会发现现在很多人都在忽略这种人的价值。比如有人说：</p>
+<blockquote>
+<p>"xx工作AI就能干，我也没什么用了。"
+"这件事AI能做，如果你的AI没做出来，那是你不会用AI。"</p>
+</blockquote>
+<p>我不评判这些话的对错，但是这些话都隐含了一个条件，就是AI提供了大部分的价值，而人只提供了极少的价值。这是一种用旧时代的方法去定义价值的结果。AI可能看起来干了很多活，但是这些活的价值可能很低。比如说以前写代码本身价值很高，但是现在AI写了一整个项目的代码，消耗几十亿的Token，我依旧要说，<strong>属于AI的价值很低</strong>。</p>
+<p>从实践的角度提问，那我问你：<strong>你写的prompt有没有价值呢？你搭起来的框架有没有价值呢？你会用AI有没有价值呢</strong>？有些人用AI一下子做出了一个符合他心目中的游戏大作（这里不是在说oneshot测试<sup id="fnref:13"><a class="footnote-ref" href="#fn:13">13</a></sup>），他兴奋地和其他人说：哇！AI太牛逼了！其实回头一看，提示词可能零零总总写了上千字。如果他兴奋的点是AI技术的进步，那可以理解。但是我想说，这个大作真正的价值是藏在他写的那份提示词里面的。我记得前一段时间开了一次讨论会，有一位朋友说他认为现在AI能力已经足够高了，如果你用AI解决不了问题，本质上是因为你不会用。这个说法说实在我不是很喜欢，因为他把他自己用AI的能力转嫁为了AI的能力。（这位朋友确实很优秀，学习和执行能力极强）换句话说假如是因为AI本身能力这么强，为什么还要我们那么会用，那么讲究呢？<strong>因此本质上人才是主体，现在大部分"AI吹"都是在遮掩人在其中扮演的角色</strong>。虽然这么吹的人可能是为了突出AI能力的变强，但是我们不应因此而焦虑。</p>
+<p>你会发现，自Agent时代以来，Github等开源社区多了很多烂尾楼。就是指开始的时候有一些idea，然后开始做起来，最后做着做着，项目就烂尾了。我观察的情况是：第一种是对AI指挥的不好，让AI拉了一仓库的屎，最后软件优化的很烂，到后期bug丛生极度影响使用，AI上下文不够也修不动了（经典的那种开局一堆点不开的按钮，稍微遇到一点corner case<sup id="fnref:14"><a class="footnote-ref" href="#fn:14">14</a></sup>就未响应的桌面端应用，点开仓库一天超级多commit，一个commit改百来个文件）；第二种是想法过于平庸的项目，很多人都在做，结果发现做不过别人遂放弃的。这两种情况难道是AI不行吗？第一种是因为完全没有技术背景，也没有提前做好计划和打算，对边界的处理很粗糙；第二种纯粹就是Taste不行，没有好的idea。<strong>由此可见，AI其实是人的放大器，放大的是人的价值</strong>。</p>
+<hr />
+<h2 id="_11">❀一个数学领域的例子❀</h2>
+<p>我们再举一个不是纯coding领域的例子，就是我前面提到的AI数学家的宣传。最近正好有一个实例撞上来了，就是所谓人结合AI得到了菲奖级的成果。讨论帖：《AI已经做出菲奖级成果》<sup id="fnref:15"><a class="footnote-ref" href="#fn:15">15</a></sup>我去稍微查看了一下，原本宣称说这个作者仅仅是鼓励AI去完成探索，但是根据我的搜索，这位老哥本身就是一名享有声誉的数学家，还在A\工作，做的就是这方面研究。那现在我就要问了，如果不是一位数学家，可以完成这样的壮举吗？就算你说他只是鼓励而已，那他的鼓励是不是有特殊的价值呢？一个数学家的鼓励和一个普通人的鼓励能一样吗？我是不相信他没有做任何方向引导的，而这本身就是很专业的。有人说那这就是人辅助AI完成的结果呀！但是在这个情况下我的观点就是：这样来看人的辅助本身价值更高。</p>
+<hr />
+<p><img alt="截图：一份人物学术履历。依次列出&quot;本科：哈佛大学数学，同时拿物理硕士；本科拿摩根奖（Morgan Prize）&quot;&quot;剑桥大学：Churchill 奖学金读高级研究课程&quot;&quot;博士：普林斯顿 2020，导师 Manjul Bhargava（菲尔兹奖得主）&quot;&quot;博士后：哈佛 Society of Fellows Junior Fellow（哈佛最高等级青年学者席位，名额极少）&quot;" src="../assets/5hxb0sey.png" /></p>
+<hr />
+<p>一个有趣的事情是，b站视频的标题尚且取的比较克制，叫做《人结合AI的菲奖级成果》，98的帖子已经取名叫《AI做出菲奖级成果》了。翻开这位8u的主页，看到他还是对AI挺焦虑的，如果他能看到这篇帖子，我也非常荣幸能提供我的见解。以及我确实不喜欢各种AI厂商的这种宣传方式。换句话说，这只是一种包装得很好的广告罢了。（9.20更新：最近的NS方程争议其实正是这个议题的一个例证。如果OpenAI在知道有数学家在这个方向做出起色，然后用AI搞出成果，那这个成果能大部分地归功于AI吗）</p>
+<hr />
+<h2 id="_12">❀第二次回答❀</h2>
+<p>现在可以回答这个存在主义问题了。给AI时代泼一层温水：AI倾向于生成一种平庸的优秀成果，就好像是一根统计值组成的主轴，没有性格，没有偏向，也没有品位。而人给它输入的有效信息，就是一股偏离主轴的力，把这种平庸变得不平庸，这也正是价值所在。即使未来AI有了自己的Taste，那价值关系会发生进一步的变化，人更真实的价值自然会显现出来。</p>
+<blockquote>
+<p><em>AI每前进一步，人就退一步，把非人的部分让出来。</em>
+<em>人每退一步，AI就前进一步，把平庸的工作接过去。</em>
+<em>退到最后，剩下的那一步，恰好是人自己</em>。*<sup id="fnref:16"><a class="footnote-ref" href="#fn:16">16</a></sup></p>
+</blockquote>
+<hr />
+<h2 id="_13">❀后记❀</h2>
+<p>写下这篇文章对我来说是一次挑战，让我也非常疲惫。当今AI进化的速度太快了，大家都无法跟上，新奇感和焦虑蔓延在整个社会。我曾期待寻找一篇和本文同类型的回答，但是却并没有。要么就是AI的深度使用者在分享自己的使用见解和经验，快速地跟上最新的潮流，他们并不去思考这些问题，好像跟进了最新的技术，就会缓解一下自己的焦虑，更有甚者会反过来瞧不起用AI不如自己的人，然后发表一些紧跟潮流的话，来增加其他人的焦虑。要么就是AI的抗拒者，他们排斥着AI的进程，然后发表着毫无根据和意义的AI威胁论。还有一些闭着眼睛的投资者，宣传着自己的老掉牙的AI概念，只是以此来赚一桶金。没有人坐下来好好告诉我们如何面对这种焦虑。于是我决定站在一个使用者的视角讲一讲我的心路历程。</p>
+<p>也许这篇文章发出来之后会被骂吧。毕竟长篇大论，可能还讲着不久之后就会过期的看法。但是就跟一年半以前的屎作一样，兴许记下来未来有人考古的时候会看到古人是怎么想的，也不浪费我想了这么多。（笑）说不定再过一年不到，我的看法又都过时了。说不定AI就站在了和人并肩的状态下，也没有所谓的价值演变理论了，那会怎么样呢？我也不知道。</p>
+<p>另，标*星号那一小行是AI为我补上的。</p>
+<hr />
+<h2 id="-">--- 编辑 ---</h2>
+<p>十大留念！谢谢各位！</p>
+<p><img alt="截图：CC98 首页&quot;热门话题&quot;栏目，第 10 条为&quot;【学习天地】给AI时代泼一层温水——我如何缓解自己的生存焦虑…&quot;，即本帖。榜上其他条目包括&quot;军训骑电动驮导员记&quot;&quot;闺蜜因为让她睡沙发我和npy睡床而生气&quot;&quot;听说今年文学院推免名额直接-10？&quot;等" src="../assets/oioewflt.png" /></p>
+<p>附上一些当时在一路写的草稿（拖更记录[f:025]）<sup id="fnref:17"><a class="footnote-ref" href="#fn:17">17</a></sup>：</p>
+<blockquote>
+<p>2026.8.9
+草稿
+准备开一个帖子时隔一年半讲一讲对AI的一些新看法。先新建个文件夹，准备写草稿</p>
+<p>2026.8.12
+感觉一直串不起来，决定开始写。毕竟要是不开始的话就会永远写不出来。</p>
+<p>2026.8.13
+我去ds更新了，晚点再说吧</p>
+<p>咳咳，ds天塌下来了，好贵啊，好像又可以更了[tb27]
+但是现在又不知道要怎么开始了...az</p>
+<p>2026.8.30
+必须写完了，再不写就开学没空写了</p>
+<p>2026.8.31
+完稿，请几位朋友审稿</p>
+<p>2026.9.1
+修改后发布</p>
+<p>2026.9.2
+十大，谢谢各位</p>
+</blockquote>
+<hr />
+<h2 id="_14">注释</h2>
+<div class="footnote">
+<hr />
+<ol>
+<li id="fn:1">
+<p><strong>一年半多</strong>：上一篇是 2025-03-22 发布的《作为普通人，在大语言模型日常使用中的一些思考感想整理分享：越聪明，就是越好用吗？》（17 回 / 2,966 点击 / 178 收藏）。本文发布于 2026-09-01，相隔约 17 个月。该文摘要见 <a href="../05-%E7%9B%B8%E5%85%B3%E5%B8%96%E5%AD%90%E6%91%98%E8%A6%81/">05</a>。&#160;<a class="footnote-backref" href="#fnref:1" title="Jump back to footnote 1 in the text">&#8617;</a></p>
+</li>
+<li id="fn:2">
+<p><strong>8u</strong>：即"吧友"，泛指论坛网友。98 黑话，源自百度贴吧。更多术语见 README 的术语表。&#160;<a class="footnote-backref" href="#fnref:2" title="Jump back to footnote 2 in the text">&#8617;</a></p>
+</li>
+<li id="fn:3">
+<p><strong>郑重道歉</strong>：这是在内涵另一篇帖子《请98喷过我的人向我郑重道歉！！》。那篇帖的楼主翻出自己 2023 年建议 98"紧跟时代上 AI"的旧帖，认为当年被群嘲、如今被 AI 证明有远见，要求喷过他的人道歉。本文作者用同一句"道歉"回应这件事，是想说：<strong>那些建议正是一种平庸的优秀</strong>——大模型推送、AI 生成推文、纯 AI 账号自动发帖，每条单看都对，却都不符合 98 的实际情况（有多少帖子、多少经费、谁来维护），回帖最高赞"代码你来写啊，还没工资"说的就是这个。&#160;<a class="footnote-backref" href="#fnref:3" title="Jump back to footnote 3 in the text">&#8617;</a></p>
+</li>
+<li id="fn:4">
+<p><strong>ds 灰测</strong>：指 DeepSeek（ds）新版本灰度测试期间。"一句话生成mc"指用一句提示词让 AI 生成《我的世界》类游戏，是当时流传很广的能力演示。&#160;<a class="footnote-backref" href="#fnref:4" title="Jump back to footnote 4 in the text">&#8617;</a></p>
+</li>
+<li id="fn:5">
+<p><strong>GPTpro20x</strong>：GPT 服务的最高一档订阅，月费约 200 美元，可用额度远高于普通档位（"20x"即倍数）。&#160;<a class="footnote-backref" href="#fnref:5" title="Jump back to footnote 5 in the text">&#8617;</a></p>
+</li>
+<li id="fn:6">
+<p><strong>大创项目</strong>：大学生创新创业训练计划，本科生的科研/创业训练项目，通常需要结题展示或参赛。&#160;<a class="footnote-backref" href="#fnref:6" title="Jump back to footnote 6 in the text">&#8617;</a></p>
+</li>
+<li id="fn:7">
+<p><strong>你眼前可能正在使用的重构后的98小程序</strong>：楼主参与了 CC98 官方小程序的<strong>重构</strong>工作——所以下文"逐步放权给 AI"的过程，是他自己的亲身经历，不是旁观评论。&#160;<a class="footnote-backref" href="#fnref:7" title="Jump back to footnote 7 in the text">&#8617;</a></p>
+</li>
+<li id="fn:8">
+<p><strong>humanizer 的 skill</strong>：用来给 AI 输出"去味"的工具。反 AI 味的思路是先把"AI 腔"的特征列出来——偏爱"不是……而是……"句式、动不动加粗、面面俱到却不说重点——再让模型照着规避。&#160;<a class="footnote-backref" href="#fnref:8" title="Jump back to footnote 8 in the text">&#8617;</a></p>
+</li>
+<li id="fn:9">
+<p>"<strong>一个 Qwen27B 就可以匹敌 Opus4.6 的 Agent 能力了</strong>"：Qwen27B 是参数量小几十倍的国产模型，Opus4.6 是当时最强的前沿模型。&#160;<a class="footnote-backref" href="#fnref:9" title="Jump back to footnote 9 in the text">&#8617;</a></p>
+</li>
+<li id="fn:10">
+<p><strong>Fable 作文帖</strong>：98 用户"昨迟人"于 2026-06-11 发布在<strong>文学交流</strong>版，197 回 / 28,707 点击 / 217 收藏，同样上过十大。全文（AI 作文《走》+ 作者回复）已搬运到 <a href="../02-%E6%90%AC%E8%BF%90-Fable%E3%80%8A%E8%B5%B0%E3%80%8B%E5%85%A8%E6%96%87/">02</a>。&#160;<a class="footnote-backref" href="#fnref:10" title="Jump back to footnote 10 in the text">&#8617;</a></p>
+</li>
+<li id="fn:11">
+<p><strong>今年期末的一份大物/普物的学习资料</strong>：2026-06-20 发布在<strong>学习天地</strong>版的《大物（甲）与普通物理学期末真题知识点整理附真题与线性代数讲义更新》，作者 ephemerall。该帖 77 回 / 14,156 点击 / 207 收藏，发布次日即上十大；楼主在 43 楼逐条指出配图错误，帖子风评随即反转。完整经过见 <a href="../03-%E4%BA%8B%E4%BB%B6-%E5%A4%A7%E7%89%A9%E6%99%AE%E7%89%A9%E8%AE%B2%E4%B9%89%E9%A3%8E%E6%B3%A2/">03</a>。&#160;<a class="footnote-backref" href="#fnref:11" title="Jump back to footnote 11 in the text">&#8617;</a></p>
+</li>
+<li id="fn:12">
+<p><strong>客户端</strong>：访问同一个论坛的不同"外壳"。网页版、微信小程序、手机 App、桌面程序、命令行工具都算客户端，区别只在界面与交互方式——同一个网站换一种外壳，就是另一个客户端。&#160;<a class="footnote-backref" href="#fnref:12" title="Jump back to footnote 12 in the text">&#8617;</a></p>
+</li>
+<li id="fn:13">
+<p><strong>one-shot 测试</strong>：给 AI 一句话、要求一次成型出结果的演示方式，典型例子是"一句话生成鹈鹕骑自行车"——它考的是模型自身的生成能力。&#160;<a class="footnote-backref" href="#fnref:13" title="Jump back to footnote 13 in the text">&#8617;</a></p>
+</li>
+<li id="fn:14">
+<p><strong>corner case</strong>：边界情况、极端输入。比如用户传了一张 0 字节的图片、文件名里带特殊字符、网络断线重连——正常流程跑得通，一遇到这类情况就卡死。"开局一堆点不开的按钮"多半就是这么来的。&#160;<a class="footnote-backref" href="#fnref:14" title="Jump back to footnote 14 in the text">&#8617;</a></p>
+</li>
+<li id="fn:15">
+<p>"<strong>AI 已经做出菲奖级成果</strong>"帖：用户 Sim_DBM 于 2026-08-28 发在<strong>科研学术</strong>版，正文只有一句话加一个视频链接，10 回 / 1,286 点击。楼主随后查证视频主角本人是职业数学家，以此论证"人的引导本身就有专业价值"。摘要见 <a href="../05-%E7%9B%B8%E5%85%B3%E5%B8%96%E5%AD%90%E6%91%98%E8%A6%81/">05</a>。&#160;<a class="footnote-backref" href="#fnref:15" title="Jump back to footnote 15 in the text">&#8617;</a></p>
+</li>
+<li id="fn:16">
+<p>楼主在"后记"里说明，这标星号的一小行是 AI 为他补上的——不是拿它当"AI 写得真好"的例子，而是打个样：他并不反对让 AI 参与生成，也不是要靠"不用 AI"来解决问题。&#160;<a class="footnote-backref" href="#fnref:16" title="Jump back to footnote 16 in the text">&#8617;</a></p>
+</li>
+<li id="fn:17">
+<p><strong>一路</strong>：即情感版"<strong>一路走来</strong>"，该版的日记帖俗称"一路楼"。上面那份拖更记录就是从楼主的日记楼里摘的。&#160;<a class="footnote-backref" href="#fnref:17" title="Jump back to footnote 17 in the text">&#8617;</a></p>
+</li>
+</ol>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  回到页面顶部
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="页脚" >
+        
+          
+          <a href="../00-README-%E7%B4%A2%E5%BC%95%E4%B8%8E%E6%B3%A8%E9%87%8A/" class="md-footer__link md-footer__link--prev" aria-label="上一页: 索引与注释">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                上一页
+              </span>
+              <div class="md-ellipsis">
+                索引与注释
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="../02-%E6%90%AC%E8%BF%90-Fable%E3%80%8A%E8%B5%B0%E3%80%8B%E5%85%A8%E6%96%87/" class="md-footer__link md-footer__link--next" aria-label="下一页: 搬运：Fable《走》全文">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                下一页
+              </span>
+              <div class="md-ellipsis">
+                搬运：Fable《走》全文
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../../..", "features": ["navigation.instant", "navigation.tracking", "navigation.tabs", "navigation.tabs.sticky", "navigation.sections", "navigation.indexes", "navigation.top", "navigation.footer", "toc.follow", "search.highlight", "search.share", "search.suggest"], "search": "../../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "\u5df2\u590d\u5236", "clipboard.copy": "\u590d\u5236", "search.result.more.one": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.more.other": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 # \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.none": "\u6ca1\u6709\u627e\u5230\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.one": "\u627e\u5230 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.other": "# \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.placeholder": "\u952e\u5165\u4ee5\u5f00\u59cb\u641c\u7d22", "search.result.term.missing": "\u7f3a\u5c11", "select.version": "\u9009\u62e9\u5f53\u524d\u7248\u672c"}, "version": null}</script>
+    
+    
+      <script src="../../../assets/javascripts/bundle.d7400e89.min.js"></script>
+      
+    
+  </body>
+</html>
