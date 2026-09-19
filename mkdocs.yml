@@ -1,0 +1,65 @@
+site_name: XSYangtuo 文档
+site_url: https://xsyangtuo.github.io/XSYangtuo-docs/
+site_description: XSYangtuo 的文章与整理稿
+site_author: XSYangtuo
+
+theme:
+  name: material
+  language: zh
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/weather-night
+        name: 切换到深色模式
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/weather-sunny
+        name: 切换到浅色模式
+  features:
+    - navigation.instant
+    - navigation.tracking
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.sections
+    - navigation.indexes
+    - navigation.top
+    - navigation.footer
+    - toc.follow
+    - search.highlight
+    - search.share
+    - search.suggest
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - md_in_html
+  - tables
+  - footnotes
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.magiclink
+
+plugins:
+  - search:
+      lang:
+        - zh
+        - en
+      separator: '[\s\u200b\-]'
+
+nav:
+  - 首页: index.md
+  - XSYangtuodocs:
+      - 文章目录: XSYangtuodocs/index.md
+      - "chapter1：《给AI时代泼一层温水》":
+          - 索引与注释: XSYangtuodocs/chapter1/00-README-索引与注释.md
+          - 正文: XSYangtuodocs/chapter1/01-正文-给AI时代泼一层温水.md
+          - "搬运：Fable《走》全文": XSYangtuodocs/chapter1/02-搬运-Fable《走》全文.md
+          - "事件：大物／普物讲义风波": XSYangtuodocs/chapter1/03-事件-大物普物讲义风波.md
+          - 热评精选: XSYangtuodocs/chapter1/04-热评精选.md
+          - 相关帖子摘要: XSYangtuodocs/chapter1/05-相关帖子摘要.md
