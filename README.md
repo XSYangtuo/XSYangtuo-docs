@@ -40,20 +40,23 @@ python -m venv .venv
 
 ## 发布
 
-push 到 `main` 即自动发布：GitHub Actions 安装依赖 → `mkdocs build --strict` → `mkdocs gh-deploy`，把构建产物推到 `gh-pages` 分支。
+站点：<https://xsyangtuo.github.io/XSYangtuo-docs/>
 
-**首次需要在仓库 Settings → Pages 里选一次 Source**（两种都能用，任选其一）：
+push 到 `main` 就自动发布，链路是：
 
-| 方式 | 设置 | 说明 |
-| --- | --- | --- |
-| **Deploy from a branch**（推荐） | Branch 选 `gh-pages`，目录选 `/(root)` | 站点地址 <https://xsyangtuo.github.io/XSYangtuo-docs/>；分支已由 Actions 维护，选完即可访问 |
-| **GitHub Actions** | Source 选 `GitHub Actions` | 走官方 Pages 发布链路，workflow 里已备好，选完需再跑一次 workflow |
+1. GitHub Actions 安装依赖，跑 `mkdocs build --strict`（坏链接、缺图、缺页会直接让构建失败）；
+2. `mkdocs gh-deploy --force` 把构建产物推到 `gh-pages` 分支；
+3. GitHub Pages 直接发布 `gh-pages` 分支（仓库 Settings → Pages 的 Source 已经这么设了，不用再动）。
 
-手动发布（本地已装好依赖时）：
+也就是说：**改完内容 push 即可**，不需要本地构建、也不需要手动上传。
+
+手动发布（本地已装好依赖时，效果等同）：
 
 ```bash
 mkdocs gh-deploy --force
 ```
+
+> 如果哪天把 Source 改成「GitHub Actions」，就要在 workflow 里换成 `actions/configure-pages` + `actions/upload-pages-artifact` + `actions/deploy-pages` 那一套；现在用的是分支方式，`gh-pages` 分支由 Actions 全权维护，别手动往里面写东西。
 
 ## 新增一篇文章
 

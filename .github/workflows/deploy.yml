@@ -6,16 +6,14 @@ on:
   workflow_dispatch:
 
 permissions:
-  contents: write   # 推送 gh-pages 分支
-  pages: write      # Source 选「GitHub Actions」时使用
-  id-token: write
+  contents: write
 
 concurrency:
   group: pages
   cancel-in-progress: false
 
 jobs:
-  build:
+  build-and-deploy:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -33,34 +31,8 @@ jobs:
       - name: 构建（严格模式：坏链接、缺图、缺页都会直接失败）
         run: mkdocs build --strict
 
-      # 发布方式一（推荐）：把构建产物推到 gh-pages 分支，Pages 的 Source 选「Deploy from a branch → gh-pages / (root)」
       - name: 发布到 gh-pages 分支
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           mkdocs gh-deploy --force
-
-      # 发布方式二：Pages 的 Source 选「GitHub Actions」时，走下面的官方发布链路。
-      # 两种方式任选其一即可：没启用其中一种时，对应步骤会失败，但用 continue-on-error 兜住，不影响另一种。
-      - name: 读取 Pages 配置
-        id: pages
-        uses: actions/configure-pages@v5
-        continue-on-error: true
-
-      - name: 打包 Pages 产物
-        uses: actions/upload-pages-artifact@v3
-        continue-on-error: true
-        with:
-          path: site
-
-  deploy:
-    needs: build
-    runs-on: ubuntu-latest
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
-    steps:
-      - name: 通过 GitHub Actions 发布
-        id: deployment
-        uses: actions/deploy-pages@v4
-        continue-on-error: true
