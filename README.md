@@ -40,15 +40,20 @@ python -m venv .venv
 
 ## 发布
 
-push 到 `main` 即自动发布：GitHub Actions 安装依赖 → `mkdocs build --strict` → `mkdocs gh-deploy`，把构建产物推到 `gh-pages` 分支，由 GitHub Pages 提供访问。
+push 到 `main` 即自动发布：GitHub Actions 安装依赖 → `mkdocs build --strict` → `mkdocs gh-deploy`，把构建产物推到 `gh-pages` 分支。
+
+**首次需要在仓库 Settings → Pages 里选一次 Source**（两种都能用，任选其一）：
+
+| 方式 | 设置 | 说明 |
+| --- | --- | --- |
+| **Deploy from a branch**（推荐） | Branch 选 `gh-pages`，目录选 `/(root)` | 站点地址 <https://xsyangtuo.github.io/XSYangtuo-docs/>；分支已由 Actions 维护，选完即可访问 |
+| **GitHub Actions** | Source 选 `GitHub Actions` | 走官方 Pages 发布链路，workflow 里已备好，选完需再跑一次 workflow |
 
 手动发布（本地已装好依赖时）：
 
 ```bash
 mkdocs gh-deploy --force
 ```
-
-> 首次部署需要在仓库 **Settings → Pages** 里把 Source 指到 `gh-pages` 分支（`/(root)`）。
 
 ## 新增一篇文章
 
